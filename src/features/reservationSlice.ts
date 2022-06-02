@@ -9,7 +9,9 @@ const initialState: ReservationState = {
 }
 
 export const reservationSlice = createSlice({
-    name: "reservations", initialState, reducers: {
+    name: "reservations",
+    initialState,
+    reducers: {
         addReservation: (state, action: PayloadAction<string>) => {
             state.value.push(action.payload)
         },
